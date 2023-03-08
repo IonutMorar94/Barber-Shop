@@ -31,8 +31,14 @@ html {
     text-decoration: none;
 }
 
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
 .header-style {
     height: 680px;
+    width: 1170px;
     display: flex;
     flex-direction: column;
     background-image: url(/images/firstbackground.jpg);
@@ -42,7 +48,7 @@ html {
 
 .top-header-list {
     display: flex;
-
+    justify-content: space-around;
 }
 
 .bottom-header-list {
@@ -55,6 +61,7 @@ html {
 .header-navigation {
     display: flex;
     flex-wrap: 1;
+
 }
 
 .left-navigation-list {
@@ -66,7 +73,6 @@ html {
     display: flex;
     gap: 30px;
     flex-wrap: 1;
-    align-content: end;
 }
 
 .navigation-list {
