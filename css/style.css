@@ -2,7 +2,14 @@
     --background-section: gray;
 }
 
-/*
+* {
+    padding-inline-start: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 html {
     font-family: "Open Sans";
     font-style: normal;
@@ -24,8 +31,55 @@ html {
     text-decoration: none;
 }
 
-.header-navigation,
-.hero-section,
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.header-style {
+    height: 680px;
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/firstbackground.jpg);
+    background-repeat: no-repeat;
+    flex-wrap: 1;
+}
+
+.top-header-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottom-header-list {
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    padding-top: 275px;
+}
+
+.header-navigation {
+    display: flex;
+    flex-wrap: 1;
+
+}
+
+.left-navigation-list {
+    display: flex;
+    gap: 30px;
+}
+
+.right-header-navigation {
+    display: flex;
+    gap: 30px;
+    flex-wrap: 1;
+}
+
+.navigation-list {
+    display: flex;
+
+}
+
 .page-section {
     background-color: var(--background-section)
 }
